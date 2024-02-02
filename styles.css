@@ -1,109 +1,74 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-
-}
-
-body{
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-nav{
-    background: blue;
+.navbar {
+    background-color: #fff;
     height: 80px;
-    width: 100%;
-}
-
-label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-}
-
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    
 
 }
+.navbar-brand {
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.3s color;
 
-nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-        text-transform: uppercase;
+}
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
 }
 
-a.active,a:hover{
-    background: #1b9bff;
-    transition: 1s;
+.navbar-toggler:focus, btn-close:focus {
+    box-shadow: none;
+    outline: none;
 }
 
-.checkbtn{
-    font-size: 30px;
-    color: white;
-    float:right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-    ;
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
 }
 
-#check{
-    display: none;
-} */
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
 
-@media (max-width:952px) {
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
     }
-    nav ul li a{
-        font-size: 16px;
-    }
-}
 
-@media (max-width:858px) {
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
+    .nav-link:hover::before,
+    .nav-link.active::before {
         width: 100%;
-        height: 100%;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all 1s;
+        visibility: visible;
     }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
+}
 
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    a:hover,a.active{
-        background: none;
-        color: #0082e6;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
+.hero-section {
+    background: url(/img/brick-wall-1834784_1920.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section::before{
+    background-color: rgba(0, 0, 0, 0);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
 }
