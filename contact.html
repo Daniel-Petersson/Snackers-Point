@@ -19,16 +19,16 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link mx-lg-2"  href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/menu">Menu</a>
+                            <a class="nav-link mx-lg-2" href="#">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/story">Our Story</a>
+                            <a class="nav-link mx-lg-2" href="#">Our Story</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/contact.html">Contact Us</a>
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -44,10 +44,16 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container d-flex align-items-left justify-content-center fs-1 text-white flex-column">
-            <h1>TRY A BETTER &</h1>
-            <h1>FASTER EATING</h1>
-            <h1>EXPERIENCE</h1>
-          </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Let us know what you think</label>
+                <textarea class="form-control custom-input" id="exampleFormControlTextarea1" rows="6" ></textarea>
+              </div>
+              <input class="btn btn-primary btn-lg" type="submit" value="Submit">
+            </div>
 
     </section>
     <!-- End Hero Section -->

@@ -1,18 +1,16 @@
-.navbar {
+/* .navbar {
     background-color: #fff;
     height: 80px;
     margin: 20px;
     border-radius: 16px;
     padding: 0.5rem;
-    
-
-}
+}*/
+/* problem med font och färg */
 .navbar-brand {
     font-weight: 500;
     color: #009970;
-    font-size: 24px;
+    font-size: 35px;
     transition: 0.3s color;
-
 }
 .navbar-toggler {
     border: none;
@@ -27,6 +25,7 @@
 .nav-link {
     color: #666777;
     font-weight: 500;
+    font-size: 25px;
     position: relative;
 }
 
@@ -44,6 +43,7 @@
         width: 0;
         height: 2px;
         background-color: #009970;
+        color: #009970;
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }
@@ -59,7 +59,8 @@
     background: url(/img/brick-wall-1834784_1920.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
-    height: 100%;
+
+    
 }
 
 .hero-section::before{
@@ -71,4 +72,20 @@
     bottom: 0;
     left: 0;
 
+}
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: center;  
+}
+
+.form-control{
+    width: 500px;
+}
+
+.btn{
+    justify-content: right;
+    width: 100px;
+    
 }
