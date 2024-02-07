@@ -5,7 +5,7 @@
     border-radius: 16px;
     padding: 0.5rem;
 }*/
-/* problem med font och färg */
+/* problem med font och färg. löstes genom att lägga lokala css efter bootstrap. */
 .navbar-brand {
     font-weight: 500;
     color: #009970;
@@ -87,5 +87,10 @@
 .btn{
     justify-content: right;
     width: 100px;
-    
+
+}
+
+.btn-custom{
+    width: 150px;
+    background-color: #009970;
 }
