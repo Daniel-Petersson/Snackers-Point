@@ -1,96 +1,122 @@
-/* .navbar {
-    background-color: #fff;
-    height: 80px;
-    margin: 20px;
-    border-radius: 16px;
-    padding: 0.5rem;
-}*/
-/* problem med font och färg. löstes genom att lägga lokala css efter bootstrap. */
-.navbar-brand {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #5cdb95;
+}
+
+.navbar{
+    background-color: #5cdb95;
+}
+
+.navbar-brand{
     font-weight: 500;
-    color: #009970;
-    font-size: 35px;
+    color: #05386b;
+    font-size: 24px;
     transition: 0.3s color;
+    margin-left: 50;
+    font-family: 'Protest Revolution', sans-serif;
+
 }
 .navbar-toggler {
     border: none;
     font-size: 1.25rem;
 }
 
-.navbar-toggler:focus, btn-close:focus {
+.navbar-toggler:focus, .btn-close:focus{
     box-shadow: none;
     outline: none;
 }
 
-.nav-link {
-    color: #666777;
+.nav-link{
+    color: #05386b;
     font-weight: 500;
-    font-size: 25px;
     position: relative;
+    font-family: 'Protest Revolution', sans-serif;
+
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover, .nav-link.active{
     color: #000;
+
 }
 
-@media (min-width: 991px) {
-    .nav-link::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 2px;
-        background-color: #009970;
-        color: #009970;
-        visibility: hidden;
-        transition: 0.3s ease-in-out;
-    }
-
-    .nav-link:hover::before,
-    .nav-link.active::before {
-        width: 100%;
-        visibility: visible;
-    }
-}
-
-.hero-section {
-    background: url(/img/brick-wall-1834784_1920.jpg) no-repeat center;
-    background-size: cover;
-    width: 100%;
-
-    
-}
-
-.hero-section::before{
-    background-color: rgba(0, 0, 0, 0);
+@media (min-width: 991px){
+.nav-link::before {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #666777;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
 
 }
-
-.hero-section .container {
-    height: 100vh;
-    z-index: 1;
-    position: center;  
 }
 
-.form-control{
+.nav-link:hover::before{
+    width: 100%;
+    visibility: visible;
+}
+
+.cart{
+    margin-right: 50px;
+    color: #009970;
+    cursor: pointer;
+}
+
+.main-container{
+    display: flex;
+    justify-self: center;
+    padding: 100px;
+}
+
+.hero-section{
     width: 500px;
+    padding: 20px;
+    font-size: 24px;
+    min-width: 200px;
+    min-height: 500px;
+    font-family: 'Protest Revolution', sans-serif;
+    color: #edf5e1;
 }
 
-.btn{
-    justify-content: right;
-    width: 100px;
-
+.menu-container{
+    display: flex;
+    justify-self: center;
+    padding: 100px;
 }
 
-.btn-custom{
-    width: 150px;
-    background-color: #009970;
+.menu-header, h2, h3, p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Protest Revolution', sans-serif;
+    flex-wrap: wrap;
+    color: #05386b;
+}
+
+.food-menu{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.starter{
+    display: flex;
+    width: auto;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    color: #05386b;
 }
