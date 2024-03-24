@@ -2,20 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #5cdb95;
+    color: #333333;
+    background-color: #FAF8F0;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
+
 .navbar{
-    background-color: #5cdb95;
+    background-color: #FAF8F0;
 }
 
 .navbar-brand{
     font-weight: 500;
-    color: #05386b;
-    font-size: 24px;
+    color: #333333;
+    font-size: 30px;
     transition: 0.3s color;
-    margin-left: 50;
-    font-family: 'Protest Revolution', sans-serif;
+    margin-left: 20px;
+    
 
 }
 .navbar-toggler {
@@ -29,10 +36,11 @@
 }
 
 .nav-link{
-    color: #05386b;
+    color: #333333;
+    font-size: 24px;
     font-weight: 500;
     position: relative;
-    font-family: 'Protest Revolution', sans-serif;
+   
 
 }
 
@@ -50,7 +58,7 @@
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-color: #666777;
+    background-color: #333333;
     visibility: hidden;
     transition: 0.3s ease-in-out;
 
@@ -62,61 +70,84 @@
     visibility: visible;
 }
 
+
+
+.main_container {
+    height: 1200px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.main_container img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+
 .cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     margin-right: 50px;
-    color: #009970;
+    color: #333333;
     cursor: pointer;
 }
 
-.main-container{
-    display: flex;
-    justify-self: center;
-    padding: 100px;
+.header .row{
+    margin-top: 70px;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
 }
 
-.hero-section{
-    width: 500px;
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 1.5rem;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #66CC99;
+    color: #333333;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #8FBC8F;
+}
+
+.about_container {
+    height: 1200px;
     padding: 20px;
-    font-size: 24px;
-    min-width: 200px;
-    min-height: 500px;
-    font-family: 'Protest Revolution', sans-serif;
-    color: #edf5e1;
-}
-
-.menu-container{
+    margin-left: 40px;
+    margin-right: 40px;
     display: flex;
-    justify-self: center;
-    padding: 100px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
-.menu-header, h2, h3, p {
+
+.about_container img{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    font-family: 'Protest Revolution', sans-serif;
-    flex-wrap: wrap;
-    color: #05386b;
-}
-
-.food-menu{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
-
-
-.starter{
-    display: flex;
-    width: auto;
-    padding: 20px;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.btn {
-    color: #05386b;
+    height: 600px;
+    object-fit: cover;
 }
