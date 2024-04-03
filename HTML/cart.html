@@ -19,90 +19,87 @@
     }
     </style>
 </head>
-
 <body class="d-flex flex-column" onload="displayCart()">
- <!---Header section-->
+  <!-- Header section -->
   <!-- Navbar -->
-   <!-- Navbar -->
-   <div class="header">
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand me-auto" href="#">Snackers Point</a>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Snackers Point</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#menu">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cart.html"><i class="bi bi-cart4"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="wishlist.html"><i class="bi bi-bag-heart-fill"></i></a>
-              </li>
-            </ul>
-          </div>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto" href="#">Snackers Point</a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Snackers Point</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html"><i class="bi bi-cart4"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wishlist.html"><i class="bi bi-bag-heart-fill"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>
-  </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
   <!-- End Navbar -->
 
   <div class="main_container">
-            <!-- Middle Section -->
-            <div class="col mt-3">
-              <h1 class="mb-3">Shoping Cart</h1>
-              <div class="row">
-                  <div class="col-md-8" id="cart-items">
-      
-                      <!-- Repeat this card structure for more products -->
-                  </div>
-                  <div class="col-md-4">
-                      <div class="card mb-3">
-                          <div class="card-body">
-                              <h5 class="card-title">Order Summary</h5>
-                              <ul class="list-group list-group-flush">
-                                  <li class="list-group-item d-flex justify-content-between" >
-                                      Subtotal
-                                      <span id="sub-total">$00.00</span>
-                                  </li>
-                                  <li class="list-group-item d-flex justify-content-between ">
-                                      Shipping
-                                      <span>Free</span>
-                                  </li>
-                                  <li class="list-group-item d-flex justify-content-between" >
-                                      Total
-                                      <span id="total">$00.00</span>
-                                  </li>
-                              </ul>
-                              <button class="btn btn-primary btn-lg mt-3">Checkout</button>
-                          </div>
-                      </div>
-                  </div>
+    <!-- Middle Section -->
+    <div class="container-fluid">
+      <div class="row justify-content-center"> <!-- Center the content -->
+        <!-- Middle Section -->
+        <div class="col-md-10 mt-3"> <!-- Adjust the column width as needed -->
+          <h1 class="mb-3">Shopping Cart</h1>
+          <div class="row">
+            <div class="col-md-8" id="cart-items">
+              <!-- Repeat this card structure for more products -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Order Summary</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between">
+                      Subtotal
+                      <span id="sub-total">$00.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                      Shipping
+                      <span>Free</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                      Total
+                      <span id="total">$00.00</span>
+                    </li>
+                  </ul>
+                  <button class="btn btn-primary btn-lg mt-3">Checkout</button>
+                </div>
               </div>
-          </div>
-            <!-- Right Sidebar -->
-      
+            </div>
           </div>
         </div>
-      </div>      
+        <!-- End Middle Section -->
+      </div>
+    </div>
+  </div>
 
  <!-- Footer Section -->
   <footer class="footer mt-auto py-3" id="contact">
