@@ -1,8 +1,10 @@
 const products = [
-    { id: 1, name: 'Pizza', price: 10.00, description: 'Delicious pizza topped with your favorite ingredients.', image:'../Images/pizza.jpg'},
-    { id: 2, name: 'Garlic Bread', price: 20.00, image:'../Images/garlic_bread.jpg' },
-    { id: 3, name: 'Pita', price: 30.00, image:'../Images/pita.jpg' },
-    { id: 4, name: 'Salad', price: 15.00, image:'../img/Ceasar.jpeg' },
+    { id: 1, name: 'Classic Potato Skins', price: 10.00, description: 'Crispy potato skins loaded with melted cheese, crispy bacon bits, and a dollop of sour cream.', image:'../Images/potatoskin.jpg'},
+    { id: 2, name: 'Garlic Bread', price: 10.00, description: 'Toasted slices of baguette brushed with garlic-infused butter.', image:'../Images/Garlicbread.jpg' },
+    { id: 3, name: 'Onion Rings', price: 10.00,description: 'Golden-brown onion rings coated in a crunchy batter and served with a side of tangy dipping sauce.', image:'../Images/onion.jpg' },
+    { id: 4, name: 'Grilled Chicken Caesar Salad', price: 30.00,description: 'Tender grilled chicken breast slices served on a bed of crisp romaine lettuce, tossed with creamy Caesar dressing, crunchy croutons, and a sprinkle of grated Parmesan cheese.', image:'../Images/Ceasar.jpg' },
+    { id: 5, name: 'Classic Cheeseburger', price: 30.00,description: 'A juicy beef patty topped with melted cheese, crisp lettuce, ripe tomatoes, and tangy pickles, all sandwiched between soft hamburger buns. Serve it with a side of crispy fries for a satisfying meal.', image:'../Images/cheeseburger.jpg' },
+    { id: 6, name: 'Margherita Pizza', price: 30.00,description: 'A thin crust pizza topped with flavorful tomato sauce, fresh mozzarella cheese, fragrant basil leaves, and a drizzle of olive oil. This classic Italian favorite is both simple and delicious, perfect for pizza lovers of all ages.', image:'../Images/pizza.jpg' },
     
 ];
 
@@ -35,7 +37,7 @@ function displayProducts() {
                     <i class="bi ${heartIcon} position-absolute top-0 start-0 text-danger" style="font-size: 2rem;" onclick="toggleHeart(this, ${product.id})"></i>
                     <div class="card-body">
                         <h5 class="card-title">${product.name}</h5>
-                        <p class="card-text">${product.description}Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">${product.description}</p>
                         <div class="card-footer mb-2">
                             $ ${product.price}
                         </div>
@@ -123,7 +125,7 @@ sessionStorage.setItem('abc','hello');
 
 sessionStorage.getItem('abc');
 function addToCart(productId){
-    alert("product added")
+    //alert("product added")
    
     const product = products.find(prod => prod.id === productId);
         if (product) {
@@ -189,7 +191,7 @@ function displayCart(){
             <div class="col-md-8">
                 <div class="card-body">
                     <h5 class="card-title">Product Title</h5>
-                    <p class="card-text">Description of the product goes here.</p>
+                    <p class="card-text">${item.description}Description of the product goes here.</p>
                     <p class="card-text"><small class="text-muted">${item.price}</small></p>
                     <div class="btn-group" role="group" aria-label="Quantity">
                         <button type="button" class="btn btn-secondary" onclick="decreaseQuantity(${item.id})">-</button>
@@ -334,7 +336,7 @@ function displayWishlist(){
             <div class="col-md-4">
             <img src=${item.image} class="img-fluid rounded-start" alt="...">
         </div>
-            <p class="card-text">Description of the product goes here.</p>
+            <p class="card-text">${item.description}Description of the product goes here.</p>
             <!-- Price -->
             <p class="card-text"><small class="text-muted">${item.price}</small></p>
             <a href="#" class="btn btn-primary" onclick="addToCart(${item.id})">Add to cart</a>
@@ -386,7 +388,7 @@ function displaySearchedProducts(matchedProducts){
                     <i class="bi ${heartIcon} position-absolute top-0 start-0 text-danger" style="font-size: 2rem;" onclick="toggleHeart(this, ${product.id})"></i>
                     <div class="card-body">
                         <h5 class="card-title">${product.name}</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">${product.description}Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <div class="card-footer mb-2">
                             $ ${product.price}
                         </div>
